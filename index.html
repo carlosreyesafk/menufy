@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>menufy — Convierte tu menú en un QR en 5 minutos</title>
+<meta name="description" content="Arma el menú de tu restaurante, genera un código QR y pégalo en la mesa. Tus clientes lo escanean y ven tu menú en su celular. Gratis para empezar.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ==================== VISTA: LANDING ==================== -->
+<div id="view-landing">
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#" data-nav="landing"><span class="brand-mark">◈</span> menufy</a>
+      <nav class="nav-links">
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#precios">Precio</a>
+        <a href="#faq">Preguntas</a>
+      </nav>
+      <button class="btn btn-primary btn-sm" data-nav="builder">Crear mi menú</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Para restaurantes, pica-pollos y food trucks</p>
+          <h1>Convierte tu menú en un QR en <em>5 minutos</em></h1>
+          <p class="lede">Arma tu menú, genera el código QR y pégalo en la mesa. Tus clientes lo escanean y ven tu menú bonito en su celular. Sin apps, sin enredos, sin mensualidades raras.</p>
+          <div class="hero-ctas">
+            <button class="btn btn-primary btn-lg" data-nav="builder">Crear mi menú gratis</button>
+            <a class="btn btn-ghost btn-lg" href="#como-funciona">Ver cómo funciona</a>
+          </div>
+          <ul class="hero-checks">
+            <li>✓ Gratis para empezar</li>
+            <li>✓ En español e inglés</li>
+            <li>✓ Sin crear cuenta</li>
+          </ul>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="phone">
+            <div class="phone-notch"></div>
+            <div class="mini-menu">
+              <p class="mini-kicker">MENÚ</p>
+              <h3>Sazón Criolla</h3>
+              <p class="mini-sub">Comida típica dominicana</p>
+              <div class="mini-cat">Platos Fuertes</div>
+              <div class="mini-item"><span>La Bandera</span><span class="dots"></span><span>RD$350</span></div>
+              <div class="mini-item"><span>Mofongo de camarones</span><span class="dots"></span><span>RD$550</span></div>
+              <div class="mini-cat">Bebidas</div>
+              <div class="mini-item"><span>Morir soñando</span><span class="dots"></span><span>RD$150</span></div>
+              <div class="mini-item"><span>Jugo de chinola</span><span class="dots"></span><span>RD$125</span></div>
+              <p class="mini-badge">Creado con Menufy by Chachi</p>
+            </div>
+          </div>
+          <div class="qr-chip">
+            <div class="qr-fake"><span>◈</span></div>
+            <p>Tu QR<br>aquí</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="como-funciona" class="section">
+      <div class="wrap">
+        <h2>De tu cuaderno al celular del cliente</h2>
+        <p class="section-sub">Tres pasos y sales a la calle.</p>
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <h3>Escribe tu menú</h3>
+            <p>Pon el nombre de tu negocio, tus platos y tus precios. Si vendes a turistas, llénalo también en inglés.</p>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <h3>Genera tu QR</h3>
+            <p>Te damos tu link y tu código QR listos. Descárgalo, imprímelo o mándalo por WhatsApp.</p>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <h3>Pégalo en la mesa</h3>
+            <p>El cliente escanea y ve tu menú al instante, con tus precios al día. Cambias algo y generas un QR nuevo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section section-alt">
+      <div class="wrap">
+        <h2>Hecho para el negocio de verdad</h2>
+        <p class="section-sub">Sin tecnicismos. Lo que necesitas y nada que te enrede.</p>
+        <div class="feature-grid">
+          <div class="feature">
+            <div class="feature-icon">📱</div>
+            <h3>Se ve bien en cualquier celular</h3>
+            <p>Tu menú se abre bonito en el teléfono del cliente, sin que tenga que instalar nada.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">🌎</div>
+            <h3>Español e inglés</h3>
+            <p>El cliente cambia de idioma con un toque. Ideal si te visitan turistas.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">🖨️</div>
+            <h3>Imprime o guarda en PDF</h3>
+            <p>Saca tu menú en PDF para imprimirlo o tu QR en un volante listo para la mesa.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">💱</div>
+            <h3>Tu moneda</h3>
+            <p>Pesos dominicanos, dólares, euros o la que uses. Los precios se ven como tus clientes los conocen.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">🔗</div>
+            <h3>Tu link es tuyo</h3>
+            <p>Cada menú tiene su propio link. Compártelo por WhatsApp, Instagram o donde quieras.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">⚡</div>
+            <h3>Actualiza cuando quieras</h3>
+            <p>¿Subió el pollo? Edita el precio y genera tu QR nuevo en un minuto.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="precios" class="section">
+      <div class="wrap">
+        <h2>Un precio claro, sin letra pequeña</h2>
+        <p class="section-sub">Empieza gratis. Si quieres tu marca al frente, un solo pago y listo.</p>
+        <div class="pricing">
+          <div class="price-card">
+            <h3>Gratis</h3>
+            <p class="price">US$0</p>
+            <p class="price-note">para probar sin compromiso</p>
+            <ul>
+              <li>✓ 1 menú activo</li>
+              <li>✓ Link + código QR</li>
+              <li>✓ Español e inglés</li>
+              <li>✓ Imprimir / PDF</li>
+              <li class="muted">Con sello “Creado con Menufy by Chachi”</li>
+            </ul>
+            <button class="btn btn-ghost btn-block" data-nav="builder">Empezar gratis</button>
+          </div>
+          <div class="price-card price-card-pro">
+            <p class="pro-flag">Recomendado</p>
+            <h3>PRO</h3>
+            <p class="price">US$29 <span>pago único</span></p>
+            <p class="price-note">sin mensualidad, tuyo para siempre</p>
+            <ul>
+              <li>✓ Todo lo del plan gratis</li>
+              <li>✓ <strong>Sin el sello de Menufy</strong></li>
+              <li>✓ Tu logo en el menú</li>
+              <li>✓ Colores de tu marca</li>
+              <li>✓ Guarda varios menús</li>
+            </ul>
+            <button class="btn btn-primary btn-block" data-nav="builder" data-goto="pro">Hazme PRO</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pago" class="section section-alt">
+      <div class="wrap">
+        <h2>Cómo pagar tu PRO</h2>
+        <p class="section-sub">Dos vías. Elige la que te sea más cómoda — el precio es el mismo: <strong>US$29</strong>.</p>
+        <div class="rails">
+          <div class="rail-card">
+            <h3>💵 PayPal</h3>
+            <p>Envía <strong>US$29</strong> a:</p>
+            <div class="copy-row">
+              <code id="paypal-email">chachiafk@gmail.com</code>
+              <button class="btn btn-sm btn-ghost" data-copy="paypal-email">Copiar</button>
+            </div>
+            <p class="rail-note">Luego mándanos el recibo a ese mismo correo y te devolvemos tu código de activación PRO.</p>
+          </div>
+          <div class="rail-card">
+            <h3>₮ USDT por red BSC (BEP-20)</h3>
+            <p>Envía <strong>29 USDT</strong> a esta dirección:</p>
+            <div class="copy-row">
+              <code id="usdt-address" class="addr">0xb2a38e074808f0c0d4ee9c13f5894c6c601fb172</code>
+              <button class="btn btn-sm btn-ghost" data-copy="usdt-address">Copiar</button>
+            </div>
+            <p class="rail-note">Pega el hash de tu transacción en el constructor y tu PRO se activa solo, sin esperar a nadie.</p>
+            <button class="btn btn-primary" data-nav="builder" data-goto="pro">Activar mi PRO</button>
+          </div>
+        </div>
+        <p class="fine-print">⚠️ Revisa bien la dirección antes de enviar. Los envíos a una dirección equivocada no se pueden recuperar.</p>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <div class="wrap narrow">
+        <h2>Preguntas frecuentes</h2>
+        <details open>
+          <summary>¿Necesito crear una cuenta?</summary>
+          <p>No. Armas tu menú y generas tu QR directo en esta página. Tu menú se guarda en tu propio navegador.</p>
+        </details>
+        <details>
+          <summary>¿El QR se vence?</summary>
+          <p>No. El link viaja dentro del QR, así que funciona mientras esta página exista. Sin renovaciones ni sorpresas.</p>
+        </details>
+        <details>
+          <summary>¿Qué pasa si cambio un precio?</summary>
+          <p>Lo editas en el constructor y generas un QR nuevo con el link actualizado. Toma un minuto.</p>
+        </details>
+        <details>
+          <summary>¿Mis clientes necesitan internet para ver el menú?</summary>
+          <p>Sí, como con cualquier página web. Con los datos del celular les abre al instante.</p>
+        </details>
+        <details>
+          <summary>¿Cómo quito el sello “Creado con Menufy”?</summary>
+          <p>Con el plan PRO (US$29, un solo pago). Además pones tu logo y los colores de tu negocio.</p>
+        </details>
+        <details>
+          <summary>¿Puedo usarlo si mi negocio está fuera de República Dominicana?</summary>
+          <p>Claro. Elige tu moneda, escribe tu menú en tu idioma y funciona igual en cualquier país.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="cta-final">
+      <div class="wrap">
+        <h2>Tu menú, en el celular de tus clientes, hoy mismo</h2>
+        <button class="btn btn-primary btn-lg" data-nav="builder">Crear mi menú gratis</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p class="brand">◈ menufy</p>
+      <p>© 2026 Chachi. Hecho con sazón en República Dominicana.</p>
+    </div>
+  </footer>
+</div>
+
+<!-- ==================== VISTA: CONSTRUCTOR ==================== -->
+<div id="view-builder" hidden>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <button class="btn btn-ghost btn-sm" data-nav="landing">← Volver</button>
+      <span class="brand"><span class="brand-mark">◈</span> menufy · constructor</span>
+      <span id="pro-badge" class="pro-badge" hidden>PRO ✓</span>
+    </div>
+  </header>
+
+  <main class="wrap builder">
+    <div class="builder-head">
+      <h1>Arma tu menú</h1>
+      <p>Todo lo que escribas se ve al instante en la vista previa. Se guarda solo en tu navegador.</p>
+      <div class="lang-tabs" role="tablist" aria-label="Idioma de edición">
+        <span class="lang-label">Editar en:</span>
+        <button class="lang-tab active" data-editlang="es">Español</button>
+        <button class="lang-tab" data-editlang="en">English</button>
+      </div>
+    </div>
+
+    <div class="builder-grid">
+      <div class="builder-form">
+        <section class="card">
+          <h2>Tu negocio</h2>
+          <label>Nombre del restaurante
+            <input type="text" id="f-name" maxlength="60" placeholder="Ej: Sazón Criolla">
+          </label>
+          <label>Descripción corta
+            <input type="text" id="f-desc" maxlength="120" placeholder="Ej: Comida típica dominicana">
+          </label>
+          <div class="row2">
+            <label>Moneda
+              <select id="f-currency">
+                <option value="RD$">RD$ — Peso dominicano</option>
+                <option value="US$">US$ — Dólar</option>
+                <option value="€">€ — Euro</option>
+                <option value="MX$">MX$ — Peso mexicano</option>
+                <option value="COP$">COP$ — Peso colombiano</option>
+                <option value="custom">Otra…</option>
+              </select>
+            </label>
+            <input type="text" id="f-currency-custom" maxlength="6" placeholder="Símbolo" hidden>
+          </div>
+          <label>Idioma principal del menú
+            <select id="f-lang">
+              <option value="es">Español</option>
+              <option value="en">English</option>
+            </select>
+          </label>
+        </section>
+
+        <section class="card">
+          <div class="card-head">
+            <h2>Categorías y platos</h2>
+            <button class="btn btn-sm btn-ghost" id="btn-add-cat">+ Categoría</button>
+          </div>
+          <div id="cats"></div>
+        </section>
+
+        <section class="card" id="pro-panel">
+          <div class="card-head">
+            <h2>Marca PRO</h2>
+            <span id="pro-badge-2" class="pro-badge" hidden>PRO ✓</span>
+          </div>
+          <div id="pro-locked">
+            <p>El plan <strong>PRO (US$29, pago único)</strong> quita el sello de Menufy y te deja poner tu logo y los colores de tu negocio.</p>
+            <div class="rails mini">
+              <div class="rail-card">
+                <h3>💵 PayPal</h3>
+                <p>Envía <strong>US$29</strong> a <code>chachiafk@gmail.com</code> y pídenos tu código por ese mismo correo.</p>
+              </div>
+              <div class="rail-card">
+                <h3>₮ USDT (BSC)</h3>
+                <p>Envía <strong>29 USDT</strong> a:</p>
+                <div class="copy-row">
+                  <code class="addr">0xb2a38e074808f0c0d4ee9c13f5894c6c601fb172</code>
+                  <button class="btn btn-sm btn-ghost" data-copy-addr="0xb2a38e074808f0c0d4ee9c13f5894c6c601fb172">Copiar</button>
+                </div>
+              </div>
+            </div>
+            <div class="activate">
+              <h3>Ya pagué con USDT — activar solo</h3>
+              <p class="muted">Pega el hash de tu transacción (0x…) y lo verificamos en la red BSC.</p>
+              <div class="row-inline">
+                <input type="text" id="f-txhash" placeholder="0x…" spellcheck="false" autocomplete="off">
+                <button class="btn btn-primary btn-sm" id="btn-verify-tx">Verificar y activar</button>
+              </div>
+              <p id="tx-status" class="status" role="status"></p>
+              <h3>Tengo mi código (pagué con PayPal)</h3>
+              <div class="row-inline">
+                <input type="email" id="f-pro-email" placeholder="tu correo">
+                <input type="text" id="f-pro-code" placeholder="código de 16 caracteres" spellcheck="false" autocomplete="off" maxlength="16">
+                <button class="btn btn-primary btn-sm" id="btn-verify-code">Activar</button>
+              </div>
+              <p id="code-status" class="status" role="status"></p>
+            </div>
+          </div>
+          <div id="pro-unlocked" hidden>
+            <label>URL de tu logo
+              <input type="url" id="f-logo" placeholder="https://…/mi-logo.png">
+            </label>
+            <div class="row3">
+              <label>Fondo <input type="color" id="f-c-bg" value="#faf6ef"></label>
+              <label>Texto <input type="color" id="f-c-ink" value="#1c1917"></label>
+              <label>Acento <input type="color" id="f-c-accent" value="#b45309"></label>
+            </div>
+            <button class="btn btn-ghost btn-sm" id="btn-theme-reset">Volver a colores originales</button>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>Mis menús guardados</h2>
+          <p class="muted" id="saved-note">Plan gratis: 1 menú guardado.</p>
+          <div class="row-inline">
+            <input type="text" id="f-save-name" maxlength="40" placeholder="Nombre para guardarlo">
+            <button class="btn btn-ghost btn-sm" id="btn-save-menu">Guardar menú</button>
+          </div>
+          <ul id="saved-list" class="saved-list"></ul>
+        </section>
+      </div>
+
+      <aside class="builder-side">
+        <div class="preview-shell">
+          <div class="preview-toolbar">
+            <span>Vista previa</span>
+            <div class="lang-tabs small">
+              <button class="lang-tab active" data-viewlang="es">ES</button>
+              <button class="lang-tab" data-viewlang="en">EN</button>
+            </div>
+          </div>
+          <div id="preview"></div>
+          <div class="preview-actions">
+            <button class="btn btn-primary btn-block" id="btn-generate">Generar link + QR</button>
+            <button class="btn btn-ghost btn-block" id="btn-print-menu">Imprimir / guardar PDF del menú</button>
+          </div>
+        </div>
+
+        <section class="card" id="output-card" hidden>
+          <h2>Tu QR está listo 🎉</h2>
+          <label>Tu link
+            <div class="copy-row">
+              <input type="text" id="f-link" readonly>
+              <button class="btn btn-sm btn-ghost" id="btn-copy-link">Copiar</button>
+            </div>
+          </label>
+          <div class="qr-box">
+            <img id="qr-img" alt="Código QR de tu menú" width="300" height="300">
+            <div id="qr-error" class="qr-error" hidden>
+              <p>😕 No pudimos generar el QR ahora mismo.<br>Revisa tu internet e inténtalo de nuevo.</p>
+              <button class="btn btn-ghost btn-sm" id="btn-qr-retry">Reintentar</button>
+            </div>
+          </div>
+          <p class="muted">Tip: mantén presionada la imagen para guardarla en tu celular.</p>
+          <button class="btn btn-ghost btn-block" id="btn-print-qr">Imprimir volante con QR</button>
+        </section>
+      </aside>
+    </div>
+  </main>
+</div>
+
+<!-- ==================== VISTA: MENÚ PÚBLICO ==================== -->
+<div id="view-public" hidden>
+  <main class="public-wrap">
+    <div id="public-menu"></div>
+    <p id="public-error" class="public-error" hidden>😕 Este link no trae un menú válido.<br><a href="#" data-nav="builder">Crea tu propio menú gratis aquí.</a></p>
+  </main>
+</div>
+
+<div id="print-root" aria-hidden="true"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
